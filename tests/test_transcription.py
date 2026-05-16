@@ -1,3 +1,8 @@
+"""GPU-dependent transcription test.
+
+Covers CORE-02: faster-whisper transcribes a WAV file on CUDA in < 3 seconds.
+Requires RTX GPU hardware — skipped in cloud CI via `-m "not gpu"`.
+"""
 import pytest
 import pathlib
 
@@ -5,7 +10,6 @@ FIXTURE_WAV = pathlib.Path("tests/fixtures/test_speech.wav")
 
 
 @pytest.mark.gpu
-@pytest.mark.xfail(reason="Wave 2: TranscriptionEngine not yet implemented", strict=False)
 def test_transcription_on_cuda():
     """CORE-02: Transcribe test WAV on CUDA device in < 3 seconds."""
     import time
