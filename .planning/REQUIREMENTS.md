@@ -107,10 +107,47 @@
 
 *Filled by roadmapper — maps each REQ-ID to a phase.*
 
-| REQ-ID | Phase |
-|--------|-------|
-| *(populated by roadmap agent)* | |
+| REQ-ID | Phase | Status |
+|--------|-------|--------|
+| CORE-02 | Phase 1 — CUDA & Transcription Spike | Pending |
+| CORE-03 | Phase 1 — CUDA & Transcription Spike | Pending |
+| CORE-05 | Phase 1 — CUDA & Transcription Spike | Pending |
+| CORE-01 | Phase 2 — CLI Audio Pipeline | Pending |
+| CORE-04 | Phase 2 — CLI Audio Pipeline | Pending |
+| LLM-01 | Phase 2 — CLI Audio Pipeline | Pending |
+| LLM-02 | Phase 2 — CLI Audio Pipeline | Pending |
+| LLM-03 | Phase 2 — CLI Audio Pipeline | Pending |
+| LLM-04 | Phase 2 — CLI Audio Pipeline | Pending |
+| INJ-01 | Phase 3 — Text Injection Engine | Pending |
+| INJ-02 | Phase 3 — Text Injection Engine | Pending |
+| INJ-03 | Phase 3 — Text Injection Engine | Pending |
+| INJ-04 | Phase 3 — Text Injection Engine | Pending |
+| INJ-05 | Phase 3 — Text Injection Engine | Pending |
+| OVR-01 | Phase 4 — Persistent Overlay UI | Pending |
+| OVR-02 | Phase 4 — Persistent Overlay UI | Pending |
+| OVR-03 | Phase 4 — Persistent Overlay UI | Pending |
+| OVR-04 | Phase 4 — Persistent Overlay UI | Pending |
+| OVR-05 | Phase 4 — Persistent Overlay UI | Pending |
+| OVR-06 | Phase 4 — Persistent Overlay UI | Pending |
+| HOT-01 | Phase 5 — Global Hotkey | Pending |
+| HOT-02 | Phase 5 — Global Hotkey | Pending |
+| PROF-01 | Phase 6 — Profile & Config System | Pending |
+| PROF-02 | Phase 6 — Profile & Config System | Pending |
+| PROF-03 | Phase 6 — Profile & Config System | Pending |
+| PROF-04 | Phase 6 — Profile & Config System | Pending |
+| PROF-05 | Phase 6 — Profile & Config System | Pending |
+| PROF-06 | Phase 6 — Profile & Config System | Pending |
+| PROF-07 | Phase 6 — Profile & Config System | Pending |
+| SET-01 | Phase 7 — Settings Window | Pending |
+| SET-02 | Phase 7 — Settings Window | Pending |
+| SET-03 | Phase 7 — Settings Window | Pending |
+| SYS-01 | Phase 8 — System Tray & Lifecycle | Pending |
+| SYS-02 | Phase 8 — System Tray & Lifecycle | Pending |
+| SYS-03 | Phase 8 — System Tray & Lifecycle | Pending |
+| DIST-01 | Phase 9 — Polish & Distribution | Pending |
+| DIST-02 | Phase 9 — Polish & Distribution | Pending |
+| DIST-03 | Phase 9 — Polish & Distribution | Pending |
 
 ---
 
-*Last updated: 2026-05-16 after initial requirements definition*
+*Last updated: 2026-05-16 after roadmap creation — 38/38 v1 requirements mapped*
