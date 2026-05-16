@@ -1,0 +1,28 @@
+name: CI — GPU (self-hosted)
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-gpu:
+    name: Full test suite with GPU (RTX 5070 Ti)
+    runs-on: [self-hosted, windows, gpu]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install project dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Verify ctranslate2 version
+        run: python -c "import ctranslate2; print(f'ctranslate2 {ctranslate2.__version__}')"
+
+      - name: Run full test suite (GPU + non-GPU)
+        run: python -m pytest tests/ -v
+
+      - name: Run Phase 1 verification script (source of truth gate)
+        run: python scripts/verify_cuda.py
