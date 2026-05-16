@@ -42,6 +42,14 @@ def register_cuda_dll_paths() -> None:
                 if os.path.isdir(bin_dir):
                     os.add_dll_directory(bin_dir)
                     _registered_paths.append(bin_dir)
+
+        # os.add_dll_directory() alone is insufficient for cuBLAS runtime
+        # DLL loading — ctranslate2's underlying CUDA library may resolve
+        # dependencies via LoadLibraryEx with flags that bypass AddDllDirectory.
+        # Augmenting PATH guarantees the DLLs are found regardless of load method.
+        if _registered_paths:
+            existing = os.environ.get("PATH", "")
+            os.environ["PATH"] = os.pathsep.join(_registered_paths) + os.pathsep + existing
     except Exception:
         pass  # Non-fatal: CUDA DLLs may be on system PATH already
 

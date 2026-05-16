@@ -41,6 +41,11 @@ def main() -> int:
     cuda_load_elapsed = time.perf_counter() - t_cuda_start
     print(f"[INFO] CUDA engine ready in {cuda_load_elapsed:.1f}s")
 
+    # Check for load/warmup errors before reporting success
+    if engine._load_error is not None:
+        print(f"[FAIL] CUDA engine failed to load: {engine._load_error}")
+        return 1
+
     # Hard gate: Phase 1 requires GPU. Treat CPU fallback as a failure.
     if engine.actual_device != "cuda":
         print(
