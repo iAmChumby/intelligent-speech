@@ -34,7 +34,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. faster-whisper large-v3-turbo loads in a background thread; a dummy 1-second silence inference warms CUDA JIT without hanging
   3. A pre-recorded test WAV file is transcribed and the result is printed to console within 3 seconds on CUDA
   4. When CUDA is unavailable (simulated), the system falls back to CPU and the output clearly identifies the fallback device
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 01-01-PLAN.md — Project structure, requirements.txt, pytest infrastructure, test stubs, test_speech.wav fixture
+- [ ] 01-02-PLAN.md — cuda_setup.py (DLL registration shim) + engine.py (TranscriptionEngine), fill test stubs
+- [ ] 01-03-PLAN.md — scripts/verify_cuda.py (Walking Skeleton entry point) + hardware verification checkpoint
 
 ### Phase 2: CLI Audio Pipeline
 **Goal**: A full speech-to-text pipeline runs in the terminal — mic capture, Silero VAD auto-stop, faster-whisper transcription, optional LLM post-processing, and console output — with no UI whatsoever
@@ -143,7 +147,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. CUDA & Transcription Spike | 0/TBD | Not started | - |
+| 1. CUDA & Transcription Spike | 0/3 | Planned | - |
 | 2. CLI Audio Pipeline | 0/TBD | Not started | - |
 | 3. Text Injection Engine | 0/TBD | Not started | - |
 | 4. Persistent Overlay UI | 0/TBD | Not started | - |
