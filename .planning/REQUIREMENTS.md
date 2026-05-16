@@ -11,10 +11,10 @@
 ### CORE — Transcription Pipeline
 
 - [ ] **CORE-01**: System captures microphone audio when recording is active (push-to-talk or hotkey-held)
-- [ ] **CORE-02**: System transcribes captured audio locally using faster-whisper with CUDA acceleration (RTX GPU)
-- [ ] **CORE-03**: System falls back to CPU transcription when CUDA is unavailable, with user-visible indication
+- [x] **CORE-02**: System transcribes captured audio locally using faster-whisper with CUDA acceleration (RTX GPU)
+- [x] **CORE-03**: System falls back to CPU transcription when CUDA is unavailable, with user-visible indication
 - [ ] **CORE-04**: System automatically stops recording after a configurable silence period (VAD-based auto-stop via Silero VAD)
-- [ ] **CORE-05**: System loads the Whisper model at startup in a background thread; recording is disabled until model is ready
+- [x] **CORE-05**: System loads the Whisper model at startup in a background thread; recording is disabled until model is ready
 
 ### CORE — LLM Post-Processing
 
@@ -109,9 +109,9 @@
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| CORE-02 | Phase 1 — CUDA & Transcription Spike | Pending |
-| CORE-03 | Phase 1 — CUDA & Transcription Spike | Pending |
-| CORE-05 | Phase 1 — CUDA & Transcription Spike | Pending |
+| CORE-02 | Phase 1 — CUDA & Transcription Spike | Complete |
+| CORE-03 | Phase 1 — CUDA & Transcription Spike | Complete |
+| CORE-05 | Phase 1 — CUDA & Transcription Spike | Complete |
 | CORE-01 | Phase 2 — CLI Audio Pipeline | Pending |
 | CORE-04 | Phase 2 — CLI Audio Pipeline | Pending |
 | LLM-01 | Phase 2 — CLI Audio Pipeline | Pending |

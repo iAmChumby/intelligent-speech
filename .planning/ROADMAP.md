@@ -36,7 +36,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. When CUDA is unavailable (simulated), the system falls back to CPU and the output clearly identifies the fallback device
 **Plans:** 3 plans
 Plans:
-- [ ] 01-01-PLAN.md — Project structure, requirements.txt, pytest infrastructure, test stubs, test_speech.wav fixture
+- [x] 01-01-PLAN.md — Project structure, requirements.txt, pytest infrastructure, test stubs, test_speech.wav fixture
 - [ ] 01-02-PLAN.md — cuda_setup.py (DLL registration shim) + engine.py (TranscriptionEngine), fill test stubs
 - [ ] 01-03-PLAN.md — scripts/verify_cuda.py (Walking Skeleton entry point) + hardware verification checkpoint
 
