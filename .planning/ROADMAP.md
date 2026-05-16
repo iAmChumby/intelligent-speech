@@ -37,7 +37,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 3 plans
 Plans:
 - [x] 01-01-PLAN.md — Project structure, requirements.txt, pytest infrastructure, test stubs, test_speech.wav fixture
-- [ ] 01-02-PLAN.md — cuda_setup.py (DLL registration shim) + engine.py (TranscriptionEngine), fill test stubs
+- [x] 01-02-PLAN.md — cuda_setup.py (DLL registration shim) + engine.py (TranscriptionEngine), fill test stubs
 - [ ] 01-03-PLAN.md — scripts/verify_cuda.py (Walking Skeleton entry point) + hardware verification checkpoint
 
 ### Phase 2: CLI Audio Pipeline
