@@ -1,0 +1,13 @@
+# Core transcription
+faster-whisper==1.2.1
+ctranslate2==4.7.1
+
+# CUDA DLLs — must be installed before ctranslate2 on Windows
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.8.0.87
+
+# VAD — torch dependency accepted
+silero-vad==6.2.1
+
+# Audio capture — installed now, used from Phase 2 onward
+sounddevice==0.5.5
